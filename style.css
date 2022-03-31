@@ -95,6 +95,11 @@
     margin-top: 5px;
 }
 
+/* input,button 처음에 숨기기 */
+#input-area {
+  display: none;
+}
+
 @media screen and (max-width: 48rem) {
     .menus {
         display: none;
