@@ -1,0 +1,127 @@
+.head-line{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+.head-line svg {
+    max-width: 480px;
+    margin: 0px 20px;
+}
+.menus{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* 내용이 알아서 안으로 들어감. */
+    border-top: 2px solid #B5B292;
+    border-bottom: 4px double #B5B292;
+}
+
+.menus button {
+    border:none;
+    background: none;
+    margin: 5px;
+}
+
+.menus button:hover {
+    background-color: #C8C5AC;
+}
+
+.news {
+    border-bottom: 2px solid #B5B292;
+}
+
+.news-img-size{
+    width:100%;
+}
+
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#B5B292;
+    overflow-x: hidden; /* 부모요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않도록 처리함. */
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .side-menu-list button {
+    margin: 5px;
+    border: none;
+    background: none;
+    width: 120px;
+  }
+  
+  .side-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border: none;
+    background: none;
+  }
+  
+  .side-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .side-menu-list button:hover {
+    background-color: #C8C5AC;
+    border-radius: 3px;
+  }
+
+  .search-button {
+    background-color: #B5B292;
+    border: 1px solid #C8C5AC;
+    color: white;
+    height: 33px;
+    border-radius: 3px;
+  }
+
+  #search-input {
+    border: 1px solid #C8C5AC;
+    border-radius: 3px;
+    height: 33px;
+  }
+
+  .icon-button {
+    padding: 8px 9px 9px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 48rem) {
+    .menus {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+  .side-menu {
+    display: none;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1em;
+}
+
+.page-item.active .page-link{
+  background-color: #B5B292;
+  color: white;
+  border-color: #B5B292;
+}
+
+.page-link {
+  text-decoration: none;
+  background-color: #C8C5AC;
+  color:white;
+}
